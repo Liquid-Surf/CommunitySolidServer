@@ -3,7 +3,7 @@
   "@graph": [
     {
       "@id": "urn:solid-server:default:FedcmHandler",
-      "@type": "RouterHandler",
+      "@type": "RouterHandler",    
       "baseUrl": { "@id": "urn:solid-server:default:variable:baseUrl" },
       "targetExtractor": { "@id": "urn:solid-server:default:TargetExtractor" },
       "allowedPathNames": [ "/\\.well-known/web-identity",
@@ -13,7 +13,8 @@
                            ],
 
       "handler": {
-        "@type": "FedcmHttpHandler"
+        "@type": "FedcmHttpHandler",
+        "baseUrl": { "@id": "urn:solid-server:default:variable:baseUrl" }
       }
     }
   ]
