@@ -1,0 +1,21 @@
+{
+  "@context": "https://linkedsoftwaredependencies.org/bundles/npm/@solid/community-server/^7.0.0/components/context.jsonld",
+  "@graph": [
+    {
+      "@id": "urn:solid-server:default:FedcmHandler",
+      "@type": "RouterHandler",
+      "baseUrl": { "@id": "urn:solid-server:default:variable:baseUrl" },
+      "targetExtractor": { "@id": "urn:solid-server:default:TargetExtractor" },
+      "allowedPathNames": [ "/\\.well-known/web-identity",
+                            "/\\.well-known/fedcm/fedcm.json",
+                            "/\\.well-known/fedcm/accounts_endpoint",
+                            "/\\.well-known/fedcm/client_metadata_endpoint"
+                           ],
+
+      "handler": {
+        "@type": "FedcmHttpHandler"
+      }
+    }
+  ]
+}
+
