@@ -262,6 +262,7 @@ export * from './identity/AccountInitializer';
 export * from './identity/IdentityProviderHttpHandler';
 export * from './identity/IdentityUtil';
 export * from './identity/OidcHttpHandler';
+export * from './identity/FedcmHttpHandler';
 
 // Init/Cluster
 export * from './init/cluster/ClusterManager';
